@@ -26,7 +26,7 @@ few extra attributes were genereated.
 Each record is in 10 minutes difference, which yield 6 samples per hour and 52557 
 samples per year. For 8 years, the number of samples reach to 420550.
 Generally, this dataset is dividing into training and testing groups in the
-ration of 8:2.  
+ratio of 8:2.  
 
 ## **Method**
 * Multiple algorithms such as linear regression (LR) with different regulaization
@@ -38,16 +38,14 @@ ration of 8:2.
 method is only used in LR and SVR. 
 
 ## **Programs**
-* Program, which wraps multiple machine learning algorithm, was developed. They
+* Program, which wraps multiple machine learning algorithms, was developed. The
 encapsulated programs are linear regresion with different regularization
-methods, supprot vector regression, and RNN using keras. Here are the way how
-these program was used. 
+methods, supprot vector regression, and RNN using keras (added later). Here are the way how
+these program can be used. 
 * Although multiple approaches were created, random search cross validation was
-used since it provided better result with limited computing resources. 
+used since it provided better result with limited computing resource. 
 
 ### **Usage:**
-* It provides avialable options.
-
 ```python
 $ python3 ./LRModelRandCV.py -h 
 ```
