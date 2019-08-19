@@ -1,4 +1,4 @@
-# Time series data - weather forecasting 
+# Time series data - weather forecast
 
 ## **Motivation**
 * Predict temperature of the next few hours using multiple machine learning
