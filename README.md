@@ -86,4 +86,4 @@ and 3.19 (SGD with alpha=0.58, l<sub>1</sub> penalty and l<sub>1</sub> ratio=0.5
 performance.
 
 * [SVR](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html) took multiple weeks for 
-training and validating however it showed worst performance of around 14.31. 
+training and validation however it showed the worst performance of around 14.31 MSE. 
