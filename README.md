@@ -5,7 +5,7 @@
   algorith. 
 
 ## **Background**
-* Dataset used for **weather forcasting** was from book [Deep Learning with Python](https://github.com/fchollet/deep-learning-with-python-notebooks). 
+* Dataset used for **weather forecasting** was from book [Deep Learning with Python](https://github.com/fchollet/deep-learning-with-python-notebooks). 
 * Dateset contains mostly numerical data and only one categorical data. 
 * It was used in the book to teach reccurent neural network (RNN).
 
