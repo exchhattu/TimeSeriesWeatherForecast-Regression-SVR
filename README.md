@@ -62,11 +62,11 @@ $ python36 ./src/SVR.py -t -i ./data/jena_climate_2009_2016.csv -n 8
 * Linear Regression showed the best performance of [MSE 3.10](https://github.com/exchhattu/TimeSeriesWeatherForcast/blob/master/Notebook-Analysis/Weather.ipynb).
 
 * Various flavors (lasso, ridge, elastic net and stochastic gradient descent) of linear regression were tested
-but the performance was not improved over linear regression. Lasso showed the worst performance with MSE 3.53;
+but the performance was not improved over ordinary linear regression. Lasso showed the worst performance with MSE 3.53;
 however, the remaining versions showed either similar or worse than ordinary linear regression.
-The randomized algorithm was used in cross-validation to find the best solution where different values of the alpha parameter
-of Ridge or Lasso. The best performance was obtained with alpha is 0, which indicates that the regularization term
-does not contribute over ordinary regression.
+The randomized algorithm was used in cross-validation to find the best solution where different value of the alpha parameter
+of Ridge or Lasso was searched. The best performance was obtained with alpha is 0, which indicates that the regularization term
+does not contribute to achieve better performance.
 
 * Multiple parameters such as alpha, l<sub>1</sub> ratio were explored for Elastic net and SGD using same searching strategy,
 the best result for these methods are 3.27 (elastic net with alpha=0.58 and l<sub>1</sub> ratio=0.03)
