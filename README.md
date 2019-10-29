@@ -30,7 +30,6 @@ in a limited computing resource.
 
 ## **Programs**
 * A program was developed using linear regression (regularization methods) and support vector regression. 
-* Randomized search was used for cross-validation. 
 
 ### **Usage:**
 ```python
