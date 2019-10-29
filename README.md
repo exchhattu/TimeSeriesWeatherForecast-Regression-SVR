@@ -16,7 +16,7 @@
 ## **Dataset Overview**
 Dataset used for **weather forecasting** was downloaded from the 
 book [Deep Learning with Python](https://github.com/fchollet/deep-learning-with-python-notebooks).
-The dataset contains recorded weather data comprising of 13 different features from 2009 to 2016.
+The dataset contains recorded weather data comprising of 13 different features from the year 2009 to 2016.
 The record was in 10 minutes difference, which yields 6 samples per hour and 52557 samples per year. 
 For 8 years, the number of samples is 420550. This dataset is dividing into training and testing groups in the ratio of 8:2.
 
@@ -24,8 +24,9 @@ For 8 years, the number of samples is 420550. This dataset is dividing into trai
 * Linear regression (LR) with different regularization and loss function was
   tried.
 * Support vector regression (SVR) was also tested.
-* Recurrent neural network with different models was tested.
-* For cross-validation, [RandomizedSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html) and [GridSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html) were tested. However, RandomizedSearchCV was selected afterward because the superior performance was achieved in a limited computing resource. 
+* For cross-validation, [RandomizedSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html) and [GridSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html) were tested. 
+However, RandomizedSearchCV was selected afterward because it produced the superior performance 
+in a limited computing resource. 
 
 ## **Programs**
 * A program was developed using linear regression (regularization methods) and support vector regression. 
