@@ -16,7 +16,7 @@
 ## **Dataset Overview**
 Dataset used for **weather forecasting** was downloaded from the 
 book [Deep Learning with Python](https://github.com/fchollet/deep-learning-with-python-notebooks).
-The dataset contains recorded weather data comprising 13 different features from 2009 to 2016.
+The dataset contains recorded weather data comprising of 13 different features from 2009 to 2016.
 The record was in 10 minutes difference, which yields 6 samples per hour and 52557 samples per year. 
 For 8 years, the number of samples is 420550. This dataset is dividing into training and testing groups in the ratio of 8:2.
 
