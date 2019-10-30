@@ -64,11 +64,11 @@ but the performance was not improved over ordinary linear regression. Lasso show
 however, the remaining versions showed either similar or worse than ordinary linear regression.
 The randomized algorithm was used in cross-validation to find the best solution where different value of the alpha parameter
 of Ridge or Lasso was searched. The best performance was obtained with alpha is 0, which indicates that the regularization term
-does not contribute to achieve better performance.
+does not contribute to achieve the better performance.
 
-* Multiple parameters such as alpha, l<sub>1</sub> ratio were explored for Elastic net and SGD using same searching strategy,
+* Multiple parameters such as alpha and l<sub>1</sub> ratio were explored for Elastic net and SGD using same searching strategy,
 the best result for these methods are 3.27 (elastic net with alpha=0.58 and l<sub>1</sub> ratio=0.03)
-and 3.19 (SGD with alpha=0.58, l<sub>1</sub> penalty and l<sub>1</sub> ratio=0.51
-These results did not beat the linear regression performance.
+and 3.19 (SGD with alpha=0.58, l<sub>1</sub> penalty and l<sub>1</sub> ratio=0.51.
+These results could not beat the ordinary linear regression performance.
 
 * [SVR](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html) took multiple weeks for training and validation however it showed the worst performance of with 14.31 MSE.
