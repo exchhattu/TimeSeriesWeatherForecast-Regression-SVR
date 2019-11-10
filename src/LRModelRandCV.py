@@ -47,6 +47,16 @@ from RegressionSplitData import TimeSeriesData
 class LReg(TimeSeriesData):
 
   def __init__(self, fo_train_ratio, fo_test_ratio, in_back_offset=2016, in_forward_offset=72, in_step=6, train_test_split=5):
+    """
+      Aims: constructor and wraps from super class.
+      Params:
+        fo_train_ratio:         % in the training set
+        fo_test_ratio:          % in the testing set
+        in_back_offset=2016:    # of rows taken backward from current row for prediction 
+        in_forward_offset=72:   target variable  
+        in_step=6:              step size used to consider a row selection 
+        train_test_split=5:     used in time series data split for cross validation
+    """
     self._train_test_split = train_test_split 
     super().__init__(fo_train_ratio, fo_test_ratio, in_back_offset, in_forward_offset, in_step) 
 
@@ -62,7 +72,7 @@ class LReg(TimeSeriesData):
   def print_model_param(self, n_top=5):
     '''
       Aims: display training and validating models performance  
-      params:
+      Params:
         * n_top: top solutions for printing.
     '''
     oj_results = self._gs_grid.cv_results_
@@ -75,10 +85,18 @@ class LReg(TimeSeriesData):
         print("Validation score: mean {0:.3f}, std: {1:.3f}".format(
                oj_results['mean_test_score'][candidate],
                oj_results['std_test_score'][candidate]))
-        print("Parameters: {0}".format(oj_results['params'][candidate]))
+        print("Parameters: {0}".format(oj_results['Params'][candidate]))
         print("---")
 
   def estimate(self, prebuilt_model=None, model="lr", njob=1):
+    """
+      Aims: prepare a pipeline required for model building 
+
+      Params:
+        prebuilt_model: path to prebuild model. None(default):    
+        model:          pass the enum/label to select a particular model. lr(default) 
+        njob:           # of cpus assigned. 1(default)
+    """
     if prebuilt_model:
       print("INFO: reading prebuilt model for testing...")
       with open(prebuilt_model, 'rb') as oj_fhandle:
@@ -124,8 +142,9 @@ class LReg(TimeSeriesData):
     self.print_model_param(n_top=3)
 
   def guess(self, write_result=False):
-    """ Aims: predict on test set using model parameters 
-        Params: write_result: write date, original and predicted values 
+    """ 
+      Aims: predict on test set using model parameters 
+      Params: write_result: write date, original and predicted values 
     """
 
     print("INFO: saving model with fine tuning parameters...")
