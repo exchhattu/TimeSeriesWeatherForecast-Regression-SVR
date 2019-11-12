@@ -72,3 +72,9 @@ and 3.19 (SGD with alpha=0.58, l<sub>1</sub> penalty and l<sub>1</sub> ratio=0.5
 These results could not beat the ordinary linear regression performance.
 
 * [SVR](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html) took multiple weeks for training and validation however it showed the worst performance of with 14.31 MSE.
+
+### Disclamier
+Opinions expressed are solely my own and do not express the views or opinions of my employer. 
+The author assumes no responsibility or liability for any errors or omissions in the content of this site. 
+The information contained in this site is provided on an “as is” basis with no guarantees of completeness, 
+accuracy, usefulness or timeliness.
